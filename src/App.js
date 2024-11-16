@@ -68,7 +68,7 @@ function App() {
       <Alert alert={Alerts} />
       <div className="container">
         <Routes>
-          <Route path="/" element={<Form titile="Try TextUtils: Convert to uppercase lowercase copy text clear all remove white spaceses" preview="Enter some text to analyze" mode={Mode}></Form>}>
+          <Route path="/" index element={<Form titile="Try TextUtils: Convert to uppercase lowercase copy text clear all remove white spaceses" preview="Enter some text to analyze" mode={Mode}></Form>}>
           </Route>
           <Route exact path="/About" element={<About mode={Mode}></About>}>
           </Route>

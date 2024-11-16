@@ -35,7 +35,7 @@ export default function Form(prop) {
             </form>
             <div className={`my-3 text-${prop.mode==="light" ? "dark" : "light"}`}>
                 <h2>Text summery!</h2>
-                <p>{text.split(' ').filter((element) => {return element.length!==0}).length} No. of words</p>
+                <p>{text.split(/\s+/).filter((element) => {return element.length!==0}).length} No. of words</p>
                 <p>{text.length} No. of character</p>
                 <p>{0.008*text.split(' ').length} esteemate time to read</p>
                 <h2>Preview</h2>
